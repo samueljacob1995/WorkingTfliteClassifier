@@ -2,4 +2,21 @@
 <resources>
     <dimen name="bottom_sheet_corner_radius">15dp</dimen>
     <dimen name="bottom_sheet_top_padding">8dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_margin_top">50dp</dimen>
+
+    <dimen name="text_fragment_title">30dp</dimen>
+    <dimen name="card_content_radius">20dp</dimen>
+    <dimen name="card_elevation">10dp</dimen>
+
+    <dimen name="dashboard_action_icon">30dp</dimen>
+
+    <dimen name="text_attendance_dialog_content">15dp</dimen>
+    <dimen name="text_attendance_dialog_content_label">9dp</dimen>
+    <dimen name="icon_attendance_dialog_content">25dp</dimen>
+    <dimen name="icon_flash_toggle">30dp</dimen>
+
+    <dimen name="button_corner">0dp</dimen>
 </resources>

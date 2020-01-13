@@ -19,6 +19,7 @@ package org.tensorflow.lite.examples.classification;
 import android.Manifest;
 import android.app.Fragment;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.hardware.Camera;
 import android.hardware.camera2.CameraAccessException;
@@ -537,7 +538,15 @@ public abstract class CameraActivity extends AppCompatActivity
             Recognition recognition = results.get(0);
             if (recognition != null) {
                 if (recognition.getTitle() != null)
-                    recognitionTextView.setText(recognition.getTitle());
+                {
+                    if(recognition.getTitle().equals("0 closed") ||recognition.getTitle().equals("1 closed")){
+                        recognitionTextView.setText("Correct");
+                    }
+                    else{
+                        recognitionTextView.setText("Incorrect");
+                    }
+                }
+
                 if (recognition.getConfidence() != null)
                     recognitionValueTextView.setText(
                             String.format("%.2f", (100 * recognition.getConfidence())) + "%");
@@ -546,7 +555,14 @@ public abstract class CameraActivity extends AppCompatActivity
             Recognition recognition1 = results.get(1);
             if (recognition1 != null) {
                 if (recognition1.getTitle() != null)
-                    recognition1TextView.setText(recognition1.getTitle());
+                {
+                    if(recognition1.getTitle().equals("1 opened") ||recognition1.getTitle().equals("0 opened")){
+                        recognition1TextView.setText("Incorrect");
+                    }
+                    else{
+                        recognition1TextView.setText("Correct");
+                    }
+                }
                 if (recognition1.getConfidence() != null)
                     recognition1ValueTextView.setText(
                             String.format("%.2f", (100 * recognition1.getConfidence())) + "%");

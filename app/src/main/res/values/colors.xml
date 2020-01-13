@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#ffa800</color>
-    <color name="colorPrimaryDark">#ff6f00</color>
-    <color name="colorAccent">#425066</color>
-
     <color name="semi_transparent">#66000000</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#0076CE</color>
+    <color name="light_blue">#41B6E6</color>
+    <color name="midnight_blue">#00447C</color>
+    <color name="colorGradientStart">#00447C</color>
+    <color name="colorGradientCenter">#0076CE</color>
+    <color name="colorGradientEnd">#41B6E6</color>
+    <color name="quartz">#EEEEEE</color>
+    <color name="granite">#C8C9C7</color>
+    <color name="green">#6EA204</color>
+    <color name="red">#CE1126</color>
+    <color name="carbon">#444444</color>
+
 </resources>
